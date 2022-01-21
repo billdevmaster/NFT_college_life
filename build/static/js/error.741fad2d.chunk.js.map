@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/error/index.js"],"names":["Error"],"mappings":"mHAAA,uBASeA,UARD,WAEV,OACI","file":"static/js/error.741fad2d.chunk.js","sourcesContent":["import React from 'react';\r\nconst Error = () => {\r\n\r\n    return (\r\n        <>\r\n            ERROR\r\n        </>\r\n    );\r\n};\r\nexport default Error;\r\n"],"sourceRoot":""}
