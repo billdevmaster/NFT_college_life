@@ -1,0 +1,118 @@
+.banner-wrapper {
+    position: relative;
+    background-color: $primary;
+    @media only screen and (max-width: 600px) {
+        min-height: 0;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    span.text-gradient {
+        background: linear-gradient(to bottom, rgba(246, 246, 246, 0.63), #86A2CB 100%, #86A2CB 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .gradient-border-btm {
+        position: relative;
+        &:before {
+            content: " ";
+            border: 10px solid;
+            border-image-slice: 1;
+            border-width: 1px;
+            border-image-source: linear-gradient(to right, #86A2CB, transparent);
+            position: absolute;
+            right: 50%;
+            left: calc(50% - 111px);
+            top: -10px;
+            bottom: 10px;
+        }
+        &:after {
+            content: " ";
+            border: 10px solid;
+            border-image-slice: 1;
+            border-width: 1px;
+            border-image-source: linear-gradient(to left, #86A2CB, transparent);
+            position: absolute;
+            right: calc(50% - 110px);
+            left: 50%;
+            top: 10px;
+            bottom: -10px;
+            z-index: 1;
+        }
+        button {
+            position: relative;
+            z-index: 10;
+        } 
+    }
+}
+
+.title {
+    text-shadow: 1px 2px 4px white;
+    font-weight: 700;
+}
+
+.about-us {
+    img {
+        width: 80%;
+    }
+}
+
+.divide {
+    span {
+        display: block;
+        width: 100px;
+        height: 1px;
+        margin: 0 auto;
+        background-color: white;
+    }
+}
+
+.faq {
+    .question {
+        text-align: center;
+        button {
+            width: 450px;
+            height: 75px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            span.top-border {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 50%;
+                height: 2px;
+                background: linear-gradient(to right, #86A2CB, transparent);
+            }
+            span.left-border {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 50%;
+                width: 2px;
+                background: linear-gradient(to bottom, #86A2CB, transparent);
+            }
+            span.bottom-border {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 50%;
+                height: 2px;
+                background: linear-gradient(to left, #86A2CB, transparent);
+            }
+            span.right-border {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                top: 50%;
+                width: 2px;
+                background: linear-gradient(to top, #86A2CB, transparent);
+            }
+        }
+    }
+}

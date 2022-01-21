@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import "./variable";
+@import "./fonts";
+@import "./general";
+@import "./header";
+@import "./tools";
+@import "./footer";
+@import "./home";
+
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
