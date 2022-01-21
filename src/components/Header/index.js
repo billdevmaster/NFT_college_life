@@ -47,6 +47,7 @@ const Header = ({ roadmapRef, props }) => {
                                 <li className={`hidden md:block mx-6 md:pb-3 `}><NavLink to="/faq" className="text-white font-bold text-1xl uppercase hover:text-opacity-70">Faq</NavLink></li>
                                 <li className={`hidden md:block mx-6 md:pb-3`}><NavLink to="/mint" className="text-white font-bold text-1xl uppercase hover:text-opacity-70">the team</NavLink></li>
                                 <li className="block md:hidden">
+                                    
                                     <HamburgerMenu
                                         isOpen={menuOpen}
                                         menuClicked={() => updateMenuOpen(true)}
